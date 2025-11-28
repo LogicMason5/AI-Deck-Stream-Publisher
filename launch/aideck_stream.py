@@ -21,8 +21,11 @@ def generate_launch_description():
             emulate_tty=True,
             parameters=[
                 {'ip': LaunchConfiguration('ip'),
+                 
                 'port': LaunchConfiguration('port'),
+                
                 'save_flag': LaunchConfiguration('save_flag'),
+                
                 'show_flag': LaunchConfiguration('show_flag'),
                 }
             ]
