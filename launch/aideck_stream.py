@@ -12,9 +12,12 @@ def generate_launch_description():
         DeclareLaunchArgument('show_flag', default_value='False'),
         Node(
             package='aideck_stream_publisher',
+            
             executable='viewer',
+            
             name='aideck_pub',
             output='screen',
+            
             emulate_tty=True,
             parameters=[
                 {'ip': LaunchConfiguration('ip'),
